@@ -1,0 +1,12 @@
+fastapi
+uvicorn[standard]
+pydantic
+requests
+httpx
+numpy
+onnxruntime
+transformers
+tokenizers
+pillow
+pytesseract
+python-multipart

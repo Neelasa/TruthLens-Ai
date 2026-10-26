@@ -1,0 +1,466 @@
+[
+  {
+    "id": "E01",
+    "claim": "Paris is the capital of France.",
+    "expected": "SUPPORTED",
+    "got": "SUPPORTED",
+    "ok": true,
+    "confidence": 100.0,
+    "candidates": 12,
+    "http_errors": 1,
+    "rule": "CONSENSUS: support_ratio>=0.60 and support_weight>=0.45",
+    "sources": [
+      [
+        "Paris",
+        []
+      ],
+      [
+        "Paris (disambiguation)",
+        []
+      ],
+      [
+        "Paris",
+        []
+      ],
+      [
+        "List of capitals of France",
+        []
+      ]
+    ],
+    "error": ""
+  },
+  {
+    "id": "E06",
+    "claim": "The Pacific Ocean is the largest ocean on Earth.",
+    "expected": "SUPPORTED",
+    "got": "CONTRADICTED",
+    "ok": false,
+    "confidence": 96.35,
+    "candidates": 6,
+    "http_errors": 6,
+    "rule": "CONSENSUS: contradiction_ratio>=0.60 and contradiction_weight>=0.45",
+    "sources": [
+      [
+        "Pacific Ocean",
+        []
+      ],
+      [
+        "List of islands in the Pacific Ocean",
+        [
+          "status=NEUTRAL"
+        ]
+      ],
+      [
+        "Pacific Ocean Blue",
+        [
+          "status=NEUTRAL",
+          "method=NLI_FILTERED_OR_NEUTRAL",
+          "verification_confidence<75",
+          "evidence_quality<45.0"
+        ]
+      ],
+      [
+        "Ocean",
+        [
+          "status=NEUTRAL"
+        ]
+      ]
+    ],
+    "error": ""
+  },
+  {
+    "id": "E11",
+    "claim": "Photosynthesis converts light energy into chemical energy in plants.",
+    "expected": "SUPPORTED",
+    "got": "SUPPORTED",
+    "ok": true,
+    "confidence": 86.79,
+    "candidates": 7,
+    "http_errors": 1,
+    "rule": "CONSENSUS: support_ratio>=0.60 and support_weight>=0.45",
+    "sources": [
+      [
+        "Photosynthesis",
+        []
+      ],
+      [
+        "photosynthesis",
+        [
+          "status=NEUTRAL"
+        ]
+      ],
+      [
+        "Photosynthesis (disambiguation)",
+        [
+          "status=NEUTRAL"
+        ]
+      ],
+      [
+        "Artificial photosynthesis",
+        [
+          "status=NEUTRAL",
+          "method=NLI_FILTERED_OR_NEUTRAL",
+          "verification_confidence<75",
+          "evidence_quality<45.0"
+        ]
+      ]
+    ],
+    "error": ""
+  },
+  {
+    "id": "E16",
+    "claim": "World War II ended in 1945.",
+    "expected": "SUPPORTED",
+    "got": "SUPPORTED",
+    "ok": true,
+    "confidence": 81.65,
+    "candidates": 6,
+    "http_errors": 3,
+    "rule": "CONSENSUS: support_ratio>=0.60 and support_weight>=0.45",
+    "sources": [
+      [
+        "Timeline of World War II (1945)",
+        []
+      ],
+      [
+        "End of World War II in Asia",
+        []
+      ],
+      [
+        "End of World War II in Europe",
+        []
+      ],
+      [
+        "World War II",
+        [
+          "status=NEUTRAL",
+          "method=NLI_CONFLICTING_SENTENCES"
+        ]
+      ]
+    ],
+    "error": ""
+  },
+  {
+    "id": "E21",
+    "claim": "The Moon orbits the Earth.",
+    "expected": "SUPPORTED",
+    "got": "SUPPORTED",
+    "ok": true,
+    "confidence": 100.0,
+    "candidates": 8,
+    "http_errors": 5,
+    "rule": "CONSENSUS: support_ratio>=0.60 and support_weight>=0.45",
+    "sources": [
+      [
+        "Orbit of the Moon",
+        []
+      ],
+      [
+        "Earth's orbit",
+        []
+      ],
+      [
+        "Moon",
+        []
+      ],
+      [
+        "Moon (disambiguation)",
+        []
+      ]
+    ],
+    "error": ""
+  },
+  {
+    "id": "E26",
+    "claim": "The Great Wall of China is located in Brazil.",
+    "expected": "CONTRADICTED",
+    "got": "CONTRADICTED",
+    "ok": true,
+    "confidence": 100.0,
+    "candidates": 12,
+    "http_errors": 6,
+    "rule": "CONSENSUS: contradiction_ratio>=0.60 and contradiction_weight>=0.45",
+    "sources": [
+      [
+        "Great Wall Station (Antarctica)",
+        [
+          "status=NEUTRAL",
+          "method=NLI_FILTERED_OR_NEUTRAL",
+          "verification_confidence<75"
+        ]
+      ],
+      [
+        "Great Wall of China",
+        []
+      ],
+      [
+        "Great Wall of China",
+        []
+      ],
+      [
+        "Great Wall of China",
+        []
+      ]
+    ],
+    "error": ""
+  },
+  {
+    "id": "E31",
+    "claim": "Isaac Newton developed the theory of general relativity.",
+    "expected": "CONTRADICTED",
+    "got": "INSUFFICIENT EVIDENCE",
+    "ok": false,
+    "confidence": 0.0,
+    "candidates": 6,
+    "http_errors": 3,
+    "rule": "NO_VOTING_EVIDENCE: 6 source(s) verified, none passed the vote gates",
+    "sources": [
+      [
+        "Isaac Newton",
+        [
+          "status=NEUTRAL",
+          "verification_confidence<75"
+        ]
+      ],
+      [
+        "Isaac Newton",
+        [
+          "status=NEUTRAL",
+          "method=NLI_FILTERED_OR_NEUTRAL",
+          "verification_confidence<75",
+          "evidence_quality<45.0"
+        ]
+      ],
+      [
+        "8000 Isaac Newton",
+        [
+          "status=NEUTRAL",
+          "method=NLI_FILTERED_OR_NEUTRAL",
+          "verification_confidence<75",
+          "evidence_quality<45.0"
+        ]
+      ],
+      [
+        "Isaac Newton",
+        [
+          "status=NEUTRAL",
+          "method=NLI_FILTERED_OR_NEUTRAL",
+          "verification_confidence<75",
+          "evidence_quality<45.0"
+        ]
+      ]
+    ],
+    "error": ""
+  },
+  {
+    "id": "E36",
+    "claim": "The Nile is located in South America.",
+    "expected": "CONTRADICTED",
+    "got": "INSUFFICIENT EVIDENCE",
+    "ok": false,
+    "confidence": 0.0,
+    "candidates": 11,
+    "http_errors": 3,
+    "rule": "NO_VOTING_EVIDENCE: 11 source(s) verified, none passed the vote gates",
+    "sources": [
+      [
+        "South America",
+        [
+          "status=NEUTRAL",
+          "method=NLI_FILTERED_OR_NEUTRAL",
+          "verification_confidence<75",
+          "evidence_quality<45.0"
+        ]
+      ],
+      [
+        "South America",
+        [
+          "status=NEUTRAL",
+          "method=NLI_FILTERED_OR_NEUTRAL",
+          "verification_confidence<75",
+          "evidence_quality<45.0"
+        ]
+      ],
+      [
+        "White Nile",
+        [
+          "status=NEUTRAL",
+          "verification_confidence<75"
+        ]
+      ],
+      [
+        "Latin America",
+        [
+          "status=NEUTRAL",
+          "method=NLI_FILTERED_OR_NEUTRAL",
+          "verification_confidence<75",
+          "evidence_quality<45.0"
+        ]
+      ]
+    ],
+    "error": ""
+  },
+  {
+    "id": "E41",
+    "claim": "The Eiffel Tower is located in London, England.",
+    "expected": "CONTRADICTED",
+    "got": "CONTRADICTED",
+    "ok": true,
+    "confidence": 100.0,
+    "candidates": 9,
+    "http_errors": 6,
+    "rule": "CONSENSUS: contradiction_ratio>=0.60 and contradiction_weight>=0.45",
+    "sources": [
+      [
+        "Tower running",
+        []
+      ],
+      [
+        "Watkin's Tower",
+        []
+      ],
+      [
+        "History of the world's tallest buildings",
+        [
+          "status=NEUTRAL",
+          "method=NLI_FILTERED_OR_NEUTRAL",
+          "verification_confidence<75",
+          "evidence_quality<45.0"
+        ]
+      ],
+      [
+        "Eiffel Tower",
+        []
+      ]
+    ],
+    "error": ""
+  },
+  {
+    "id": "E46",
+    "claim": "Vaccines cause autism.",
+    "expected": "CONTRADICTED",
+    "got": "CONTRADICTED",
+    "ok": true,
+    "confidence": 96.02,
+    "candidates": 6,
+    "http_errors": 3,
+    "rule": "CONSENSUS: contradiction_ratio>=0.60 and contradiction_weight>=0.45",
+    "sources": [
+      [
+        "Vaccines and autism",
+        []
+      ],
+      [
+        "Thiomersal and vaccines",
+        [
+          "status=NEUTRAL",
+          "method=NLI_FILTERED_OR_NEUTRAL",
+          "verification_confidence<75",
+          "evidence_quality<45.0"
+        ]
+      ],
+      [
+        "Causes of autism",
+        [
+          "status=NEUTRAL",
+          "verification_confidence<75"
+        ]
+      ],
+      [
+        "Vaccines",
+        [
+          "status=NEUTRAL",
+          "method=NLI_FILTERED_OR_NEUTRAL",
+          "verification_confidence<75",
+          "evidence_quality<45.0"
+        ]
+      ]
+    ],
+    "error": ""
+  },
+  {
+    "id": "E51",
+    "claim": "Tomorrow's lottery numbers will include the number 7.",
+    "expected": "INSUFFICIENT EVIDENCE",
+    "got": "INSUFFICIENT EVIDENCE",
+    "ok": true,
+    "confidence": 0.0,
+    "candidates": 4,
+    "http_errors": 2,
+    "rule": "NO_VOTING_EVIDENCE: 4 source(s) verified, none passed the vote gates",
+    "sources": [
+      [
+        "Tomorrow's Pioneers",
+        [
+          "status=NEUTRAL",
+          "verification_confidence<75",
+          "evidence_quality<45.0",
+          "relevance<20"
+        ]
+      ],
+      [
+        "Tomorrow's Harvest",
+        [
+          "status=NEUTRAL",
+          "verification_confidence<75",
+          "evidence_quality<45.0",
+          "relevance<20"
+        ]
+      ],
+      [
+        "Tomorrow Sunny / The Revelry, Spp",
+        [
+          "status=NEUTRAL",
+          "verification_confidence<75",
+          "evidence_quality<45.0",
+          "relevance<20"
+        ]
+      ],
+      [
+        "Mark Six",
+        [
+          "status=NEUTRAL",
+          "verification_confidence<75",
+          "evidence_quality<45.0",
+          "relevance<20"
+        ]
+      ]
+    ],
+    "error": ""
+  },
+  {
+    "id": "E56",
+    "claim": "The Taj Mahal is located in Agra, India.",
+    "expected": "SUPPORTED",
+    "got": "SUPPORTED",
+    "ok": true,
+    "confidence": 100.0,
+    "candidates": 12,
+    "http_errors": 4,
+    "rule": "CONSENSUS: support_ratio>=0.60 and support_weight>=0.45",
+    "sources": [
+      [
+        "Taj Mahal Palace Hotel",
+        []
+      ],
+      [
+        "Taj Mahal",
+        []
+      ],
+      [
+        "Taj Mahal",
+        [
+          "status=NEUTRAL"
+        ]
+      ],
+      [
+        "Origins and architecture of the Taj Mahal",
+        [
+          "status=NEUTRAL",
+          "verification_confidence<75"
+        ]
+      ]
+    ],
+    "error": ""
+  }
+]

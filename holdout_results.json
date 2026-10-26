@@ -1,0 +1,1304 @@
+[
+  {
+    "id": "H01",
+    "claim": "The Ganges River flows through India.",
+    "expected": "SUPPORTED",
+    "got": "CONTRADICTED",
+    "ok": false,
+    "confidence": 72.37,
+    "candidates": 9,
+    "http_errors": 1,
+    "http_error_samples": [
+      "https://en.wikipedia.org/w/api.php: HTTPError: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&format=json&list=search&srsearch=India&srlimit=8&srprop=snippet"
+    ],
+    "rule": "CONSENSUS: contradiction_ratio>=0.60 and contradiction_weight>=0.45",
+    "sources": [
+      [
+        "Ganges",
+        [
+          "status=NEUTRAL",
+          "method=NLI_CONFLICTING_SENTENCES"
+        ]
+      ],
+      [
+        "Ganges river dolphin",
+        []
+      ],
+      [
+        "Ganges water dispute",
+        []
+      ],
+      [
+        "Burhi Gandak River",
+        []
+      ]
+    ],
+    "error": ""
+  },
+  {
+    "id": "H02",
+    "claim": "Venus is the second planet from the Sun.",
+    "expected": "SUPPORTED",
+    "got": "SUPPORTED",
+    "ok": true,
+    "confidence": 100.0,
+    "candidates": 12,
+    "http_errors": 1,
+    "http_error_samples": [
+      "https://en.wikipedia.org/w/api.php: HTTPError: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&format=json&prop=extracts%7Cinfo&explaintext=1&exchars=9000&inprop="
+    ],
+    "rule": "CONSENSUS: support_ratio>=0.60 and support_weight>=0.45",
+    "sources": [
+      [
+        "Venus",
+        []
+      ],
+      [
+        "Venus (disambiguation)",
+        []
+      ],
+      [
+        "List of geological features on Venus",
+        []
+      ],
+      [
+        "Venus",
+        []
+      ]
+    ],
+    "error": ""
+  },
+  {
+    "id": "H03",
+    "claim": "Yuri Gagarin was the first person to walk on the Moon.",
+    "expected": "CONTRADICTED",
+    "got": "CONTRADICTED",
+    "ok": true,
+    "confidence": 100.0,
+    "candidates": 12,
+    "http_errors": 0,
+    "http_error_samples": [],
+    "rule": "CONSENSUS: contradiction_ratio>=0.60 and contradiction_weight>=0.45",
+    "sources": [
+      [
+        "Death of Yuri Gagarin",
+        []
+      ],
+      [
+        "Yuri Gagarin",
+        [
+          "status=NEUTRAL",
+          "verification_confidence<75"
+        ]
+      ],
+      [
+        "Yuri Gagarin",
+        [
+          "status=NEUTRAL",
+          "verification_confidence<75"
+        ]
+      ],
+      [
+        "Yuri Gagarin Cosmonaut Training Center",
+        [
+          "status=NEUTRAL",
+          "verification_confidence<75",
+          "evidence_quality<45.0"
+        ]
+      ]
+    ],
+    "error": ""
+  },
+  {
+    "id": "H04",
+    "claim": "The Colosseum is located in Rome.",
+    "expected": "SUPPORTED",
+    "got": "SUPPORTED",
+    "ok": true,
+    "confidence": 100.0,
+    "candidates": 12,
+    "http_errors": 3,
+    "http_error_samples": [
+      "https://www.wikidata.org/w/api.php: HTTPError: 429 Client Error: Too Many Requests for url: https://www.wikidata.org/w/api.php?action=wbsearchentities&search=Colosseum+Rome&language=en&uselang=en&format=json",
+      "https://www.wikidata.org/w/api.php: HTTPError: 429 Client Error: Too Many Requests for url: https://www.wikidata.org/w/api.php?action=wbsearchentities&search=Rome&language=en&uselang=en&format=json&limit=3",
+      "https://en.wikipedia.org/w/api.php: HTTPError: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&format=json&list=search&srsearch=The+Colosseum+is+located+in+Rome.&"
+    ],
+    "rule": "CONSENSUS: support_ratio>=0.60 and support_weight>=0.45",
+    "sources": [
+      [
+        "Ancient Rome (painting)",
+        []
+      ],
+      [
+        "Colosseum: Rome's Arena of Death",
+        []
+      ],
+      [
+        "Colosseo (Rome Metro)",
+        []
+      ],
+      [
+        "Colosseum",
+        []
+      ]
+    ],
+    "error": ""
+  },
+  {
+    "id": "H05",
+    "claim": "Insulin is a hormone that regulates blood sugar levels.",
+    "expected": "SUPPORTED",
+    "got": "SUPPORTED",
+    "ok": true,
+    "confidence": 100.0,
+    "candidates": 7,
+    "http_errors": 0,
+    "http_error_samples": [],
+    "rule": "CONSENSUS: support_ratio>=0.60 and support_weight>=0.45",
+    "sources": [
+      [
+        "Blood sugar level",
+        [
+          "status=NEUTRAL",
+          "method=NLI_FILTERED_OR_NEUTRAL",
+          "verification_confidence<75"
+        ]
+      ],
+      [
+        "Blood sugar regulation",
+        []
+      ],
+      [
+        "Insulin",
+        [
+          "status=NEUTRAL",
+          "verification_confidence<75"
+        ]
+      ],
+      [
+        "Type 1 diabetes",
+        [
+          "status=NEUTRAL",
+          "verification_confidence<75"
+        ]
+      ]
+    ],
+    "error": ""
+  },
+  {
+    "id": "H06",
+    "claim": "The Colosseum is located in Madrid.",
+    "expected": "CONTRADICTED",
+    "got": "SUPPORTED",
+    "ok": false,
+    "confidence": 86.91,
+    "candidates": 12,
+    "http_errors": 1,
+    "http_error_samples": [
+      "https://en.wikipedia.org/w/api.php: HTTPError: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&format=json&list=search&srsearch=colosseum+located+madrid&srlimit=8"
+    ],
+    "rule": "CONSENSUS: support_ratio>=0.60 and support_weight>=0.45",
+    "sources": [
+      [
+        "Teatro Variedades",
+        []
+      ],
+      [
+        "2017 in Romanian kickboxing",
+        [
+          "status=NEUTRAL",
+          "method=NLI_FILTERED_OR_NEUTRAL",
+          "verification_confidence<75",
+          "evidence_quality<45.0"
+        ]
+      ],
+      [
+        "Colosseum",
+        [
+          "status=NEUTRAL",
+          "method=NLI_FILTERED_OR_NEUTRAL",
+          "verification_confidence<75",
+          "evidence_quality<45.0"
+        ]
+      ],
+      [
+        "Colosseum",
+        [
+          "status=NEUTRAL",
+          "method=NLI_FILTERED_OR_NEUTRAL",
+          "verification_confidence<75",
+          "evidence_quality<45.0"
+        ]
+      ]
+    ],
+    "error": ""
+  },
+  {
+    "id": "H07",
+    "claim": "The Titanic sank in 1912.",
+    "expected": "SUPPORTED",
+    "got": "SUPPORTED",
+    "ok": true,
+    "confidence": 100.0,
+    "candidates": 8,
+    "http_errors": 1,
+    "http_error_samples": [
+      "https://en.wikipedia.org/w/api.php: HTTPError: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&format=json&list=search&srsearch=titanic+sank+1912&srlimit=8&srprop"
+    ],
+    "rule": "CONSENSUS: support_ratio>=0.60 and support_weight>=0.45",
+    "sources": [
+      [
+        "Iceberg that sank the Titanic",
+        []
+      ],
+      [
+        "Titanic",
+        []
+      ],
+      [
+        "Sinking of the Titanic",
+        []
+      ],
+      [
+        "Titanic",
+        []
+      ]
+    ],
+    "error": ""
+  },
+  {
+    "id": "H08",
+    "claim": "The Sahara is located in South America.",
+    "expected": "CONTRADICTED",
+    "got": "CONTRADICTED",
+    "ok": true,
+    "confidence": 100.0,
+    "candidates": 12,
+    "http_errors": 1,
+    "http_error_samples": [
+      "https://www.wikidata.org/w/api.php: HTTPError: 429 Client Error: Too Many Requests for url: https://www.wikidata.org/w/api.php?action=wbsearchentities&search=The+Sahara+is+located+in+South+America.&language="
+    ],
+    "rule": "CONSENSUS: contradiction_ratio>=0.60 and contradiction_weight>=0.45",
+    "sources": [
+      [
+        "Sahara (disambiguation)",
+        []
+      ],
+      [
+        "South America",
+        [
+          "status=NEUTRAL",
+          "method=NLI_FILTERED_OR_NEUTRAL",
+          "verification_confidence<75",
+          "evidence_quality<45.0"
+        ]
+      ],
+      [
+        "South America",
+        [
+          "status=NEUTRAL",
+          "method=NLI_FILTERED_OR_NEUTRAL",
+          "verification_confidence<75",
+          "evidence_quality<45.0"
+        ]
+      ],
+      [
+        "Sahara",
+        [
+          "status=NEUTRAL",
+          "method=NLI_FILTERED_OR_NEUTRAL",
+          "verification_confidence<75",
+          "evidence_quality<45.0"
+        ]
+      ]
+    ],
+    "error": ""
+  },
+  {
+    "id": "H09",
+    "claim": "The Ganges River flows through Egypt.",
+    "expected": "CONTRADICTED",
+    "got": "CONTRADICTED",
+    "ok": true,
+    "confidence": 100.0,
+    "candidates": 12,
+    "http_errors": 0,
+    "http_error_samples": [],
+    "rule": "CONSENSUS: contradiction_ratio>=0.60 and contradiction_weight>=0.45",
+    "sources": [
+      [
+        "Ganges",
+        []
+      ],
+      [
+        "Ganges river dolphin",
+        [
+          "status=NEUTRAL"
+        ]
+      ],
+      [
+        "Ganges river dolphin",
+        []
+      ],
+      [
+        "River",
+        [
+          "status=NEUTRAL"
+        ]
+      ]
+    ],
+    "error": ""
+  },
+  {
+    "id": "H10",
+    "claim": "The tea I made this morning contained exactly two spoons of sugar.",
+    "expected": "INSUFFICIENT EVIDENCE",
+    "got": "INSUFFICIENT EVIDENCE",
+    "ok": true,
+    "confidence": 0.0,
+    "candidates": 0,
+    "http_errors": 0,
+    "http_error_samples": [],
+    "rule": "NO_CANDIDATES_RETRIEVED",
+    "sources": [],
+    "error": ""
+  },
+  {
+    "id": "H11",
+    "claim": "The Sahara is a desert in Africa.",
+    "expected": "SUPPORTED",
+    "got": "SUPPORTED",
+    "ok": true,
+    "confidence": 100.0,
+    "candidates": 12,
+    "http_errors": 0,
+    "http_error_samples": [],
+    "rule": "CONSENSUS: support_ratio>=0.60 and support_weight>=0.45",
+    "sources": [
+      [
+        "Sahara",
+        []
+      ],
+      [
+        "Sahara Desert (ecoregion)",
+        []
+      ],
+      [
+        "Desert blues",
+        []
+      ],
+      [
+        "Western Sahara",
+        [
+          "status=NEUTRAL"
+        ]
+      ]
+    ],
+    "error": ""
+  },
+  {
+    "id": "H12",
+    "claim": "A stranger on my street owns a blue umbrella with a torn handle.",
+    "expected": "INSUFFICIENT EVIDENCE",
+    "got": "INSUFFICIENT EVIDENCE",
+    "ok": true,
+    "confidence": 0.0,
+    "candidates": 0,
+    "http_errors": 0,
+    "http_error_samples": [],
+    "rule": "NO_CANDIDATES_RETRIEVED",
+    "sources": [],
+    "error": ""
+  },
+  {
+    "id": "H13",
+    "claim": "Oxygen has the atomic number 8.",
+    "expected": "SUPPORTED",
+    "got": "SUPPORTED",
+    "ok": true,
+    "confidence": 100.0,
+    "candidates": 6,
+    "http_errors": 3,
+    "http_error_samples": [
+      "https://en.wikipedia.org/w/api.php: HTTPError: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&format=json&list=search&srsearch=Oxygen&srlimit=8&srprop=snippet",
+      "https://en.wikipedia.org/w/api.php: HTTPError: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&format=json&list=search&srsearch=Oxygen+the+atomic+number+8&srlimit",
+      "https://en.wikipedia.org/w/api.php: HTTPError: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&format=json&list=search&srsearch=oxygen+atomic+number&srlimit=8&srp"
+    ],
+    "rule": "CONSENSUS: support_ratio>=0.60 and support_weight>=0.45",
+    "sources": [
+      [
+        "oxygen",
+        []
+      ],
+      [
+        "Oxygen (disambiguation)",
+        []
+      ],
+      [
+        "Atomic mass",
+        [
+          "status=NEUTRAL",
+          "method=NLI_FILTERED_OR_NEUTRAL",
+          "verification_confidence<75",
+          "evidence_quality<45.0"
+        ]
+      ],
+      [
+        "Oxygen",
+        [
+          "status=NEUTRAL",
+          "method=NLI_FILTERED_OR_NEUTRAL",
+          "verification_confidence<75",
+          "evidence_quality<45.0"
+        ]
+      ]
+    ],
+    "error": ""
+  },
+  {
+    "id": "H14",
+    "claim": "The Titanic sank in 1950.",
+    "expected": "CONTRADICTED",
+    "got": "CONTRADICTED",
+    "ok": true,
+    "confidence": 100.0,
+    "candidates": 9,
+    "http_errors": 0,
+    "http_error_samples": [],
+    "rule": "CONSENSUS: contradiction_ratio>=0.60 and contradiction_weight>=0.45",
+    "sources": [
+      [
+        "Polar the Titanic Bear",
+        [
+          "status=NEUTRAL",
+          "verification_confidence<75"
+        ]
+      ],
+      [
+        "Sinking of the Titanic",
+        []
+      ],
+      [
+        "Titanic",
+        []
+      ],
+      [
+        "Titanic",
+        [
+          "status=NEUTRAL",
+          "method=NLI_FILTERED_OR_NEUTRAL",
+          "verification_confidence<75",
+          "evidence_quality<45.0"
+        ]
+      ]
+    ],
+    "error": ""
+  },
+  {
+    "id": "H15",
+    "claim": "Our class group chat will receive 53 messages on Sunday.",
+    "expected": "INSUFFICIENT EVIDENCE",
+    "got": "INSUFFICIENT EVIDENCE",
+    "ok": true,
+    "confidence": 0.0,
+    "candidates": 9,
+    "http_errors": 0,
+    "http_error_samples": [],
+    "rule": "NO_VOTING_EVIDENCE: 9 source(s) verified, none passed the vote gates",
+    "sources": [
+      [
+        "Our",
+        [
+          "status=NEUTRAL",
+          "verification_confidence<75",
+          "evidence_quality<45.0",
+          "relevance<20"
+        ]
+      ],
+      [
+        "Sunday",
+        [
+          "status=NEUTRAL",
+          "verification_confidence<75",
+          "evidence_quality<45.0",
+          "relevance<20"
+        ]
+      ],
+      [
+        "Sunday",
+        [
+          "status=NEUTRAL",
+          "verification_confidence<75",
+          "evidence_quality<45.0",
+          "relevance<20"
+        ]
+      ],
+      [
+        "Sunday",
+        [
+          "status=NEUTRAL",
+          "verification_confidence<75",
+          "evidence_quality<45.0",
+          "relevance<20"
+        ]
+      ]
+    ],
+    "error": ""
+  },
+  {
+    "id": "H16",
+    "claim": "Charles Dickens wrote Hamlet.",
+    "expected": "CONTRADICTED",
+    "got": "CONTRADICTED",
+    "ok": true,
+    "confidence": 68.33,
+    "candidates": 12,
+    "http_errors": 3,
+    "http_error_samples": [
+      "https://www.wikidata.org/w/api.php: HTTPError: 429 Client Error: Too Many Requests for url: https://www.wikidata.org/w/api.php?action=wbsearchentities&search=charles+dickens+wrote+hamlet&language=en&uselang=",
+      "https://en.wikipedia.org/w/api.php: HTTPError: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&format=json&list=search&srsearch=Charles+Dickens+wrote+Hamlet.&srli",
+      "https://en.wikipedia.org/w/api.php: HTTPError: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&format=json&prop=extracts%7Cinfo&explaintext=1&exchars=9000&inprop="
+    ],
+    "rule": "CONSENSUS: contradiction_ratio>=0.60 and contradiction_weight>=0.45",
+    "sources": [
+      [
+        "Charles Dickens",
+        [
+          "status=NEUTRAL"
+        ]
+      ],
+      [
+        "Charles Dickens",
+        [
+          "status=NEUTRAL"
+        ]
+      ],
+      [
+        "Charles Dickens, Jr.",
+        [
+          "status=NEUTRAL"
+        ]
+      ],
+      [
+        "Charles Dickens",
+        []
+      ]
+    ],
+    "error": ""
+  },
+  {
+    "id": "H17",
+    "claim": "Mount Fuji is located in Italy.",
+    "expected": "CONTRADICTED",
+    "got": "CONTRADICTED",
+    "ok": true,
+    "confidence": 100.0,
+    "candidates": 12,
+    "http_errors": 1,
+    "http_error_samples": [
+      "https://en.wikipedia.org/w/api.php: HTTPError: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&format=json&prop=extracts%7Cinfo&explaintext=1&exchars=9000&inprop="
+    ],
+    "rule": "CONSENSUS: contradiction_ratio>=0.60 and contradiction_weight>=0.45",
+    "sources": [
+      [
+        "Mount Fuji",
+        []
+      ],
+      [
+        "Mount Fuji",
+        []
+      ],
+      [
+        "Mount\u00a0Fuji",
+        [
+          "status=NEUTRAL"
+        ]
+      ],
+      [
+        "Thirty-six Views of Mount Fuji",
+        [
+          "status=NEUTRAL",
+          "method=NLI_FILTERED_OR_NEUTRAL",
+          "verification_confidence<75",
+          "evidence_quality<45.0"
+        ]
+      ]
+    ],
+    "error": ""
+  },
+  {
+    "id": "H18",
+    "claim": "Mount Fuji is located in Japan.",
+    "expected": "SUPPORTED",
+    "got": "SUPPORTED",
+    "ok": true,
+    "confidence": 100.0,
+    "candidates": 12,
+    "http_errors": 3,
+    "http_error_samples": [
+      "https://www.wikidata.org/w/api.php: HTTPError: 429 Client Error: Too Many Requests for url: https://www.wikidata.org/w/api.php?action=wbsearchentities&search=Mount+Fuji+is+located+in+Japan.&language=en&usela",
+      "https://www.wikidata.org/w/api.php: HTTPError: 429 Client Error: Too Many Requests for url: https://www.wikidata.org/w/api.php?action=wbsearchentities&search=Mount+Fuji+Japan&language=en&uselang=en&format=js",
+      "https://en.wikipedia.org/w/api.php: HTTPError: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&format=json&list=search&srsearch=mount+fuji+located+japan&srlimit=8"
+    ],
+    "rule": "CONSENSUS: support_ratio>=0.60 and support_weight>=0.45",
+    "sources": [
+      [
+        "Mount Fuji",
+        []
+      ],
+      [
+        "Mount Fuji",
+        []
+      ],
+      [
+        "Historic eruptions of Mount Fuji",
+        []
+      ],
+      [
+        "Fuji Five Lakes",
+        []
+      ]
+    ],
+    "error": ""
+  },
+  {
+    "id": "H19",
+    "claim": "My brother's laptop has exactly 17 browser tabs open right now.",
+    "expected": "INSUFFICIENT EVIDENCE",
+    "got": "INSUFFICIENT EVIDENCE",
+    "ok": true,
+    "confidence": 0.0,
+    "candidates": 3,
+    "http_errors": 2,
+    "http_error_samples": [
+      "https://www.wikidata.org/w/api.php: HTTPError: 429 Client Error: Too Many Requests for url: https://www.wikidata.org/w/api.php?action=wbsearchentities&search=My+brother%27s+laptop+has+exactly+17+browser+tabs",
+      "https://www.wikidata.org/w/api.php: HTTPError: 429 Client Error: Too Many Requests for url: https://www.wikidata.org/w/api.php?action=wbsearchentities&search=My+brother%27s+laptop&language=en&uselang=en&form"
+    ],
+    "rule": "NO_VOTING_EVIDENCE: 3 source(s) verified, none passed the vote gates",
+    "sources": [
+      [
+        "Hunter Biden laptop controversy",
+        [
+          "status=NEUTRAL",
+          "method=NLI_FILTERED_OR_NEUTRAL",
+          "verification_confidence<75",
+          "evidence_quality<45.0"
+        ]
+      ],
+      [
+        "List of Google Easter eggs",
+        [
+          "status=NEUTRAL",
+          "verification_confidence<75",
+          "evidence_quality<45.0"
+        ]
+      ],
+      [
+        "Hunter Biden",
+        [
+          "status=NEUTRAL",
+          "verification_confidence<75",
+          "evidence_quality<45.0"
+        ]
+      ]
+    ],
+    "error": ""
+  },
+  {
+    "id": "H20",
+    "claim": "Oxygen has the atomic number 20.",
+    "expected": "CONTRADICTED",
+    "got": "CONTRADICTED",
+    "ok": true,
+    "confidence": 100.0,
+    "candidates": 10,
+    "http_errors": 3,
+    "http_error_samples": [
+      "https://www.wikidata.org/w/api.php: HTTPError: 429 Client Error: Too Many Requests for url: https://www.wikidata.org/w/api.php?action=wbsearchentities&search=Oxygen+has+the+atomic+number+20.&language=en&usel",
+      "https://www.wikidata.org/w/api.php: HTTPError: 429 Client Error: Too Many Requests for url: https://www.wikidata.org/w/api.php?action=wbsearchentities&search=Oxygen+the+atomic+number+20&language=en&uselang=e",
+      "https://en.wikipedia.org/w/api.php: HTTPError: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&format=json&list=search&srsearch=Oxygen+has+the+atomic+number+20.&s"
+    ],
+    "rule": "CONSENSUS: contradiction_ratio>=0.60 and contradiction_weight>=0.45",
+    "sources": [
+      [
+        "oxygen",
+        []
+      ],
+      [
+        "Oxygen",
+        []
+      ],
+      [
+        "Oxygen (disambiguation)",
+        []
+      ],
+      [
+        "Allotropes of oxygen",
+        [
+          "status=NEUTRAL",
+          "verification_confidence<75"
+        ]
+      ]
+    ],
+    "error": ""
+  },
+  {
+    "id": "H21",
+    "claim": "New Delhi is the capital of India.",
+    "expected": "SUPPORTED",
+    "got": "SUPPORTED",
+    "ok": true,
+    "confidence": 80.38,
+    "candidates": 10,
+    "http_errors": 3,
+    "http_error_samples": [
+      "https://en.wikipedia.org/w/api.php: HTTPError: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&format=json&list=search&srsearch=New+Delhi+is+the+capital+of+India.",
+      "https://en.wikipedia.org/w/api.php: HTTPError: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&format=json&list=search&srsearch=New+Delhi&srlimit=8&srprop=snippet",
+      "https://en.wikipedia.org/w/api.php: HTTPError: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&format=json&list=search&srsearch=New+Delhi+India&srlimit=8&srprop=s"
+    ],
+    "rule": "CONSENSUS: support_ratio>=0.60 and support_weight>=0.45",
+    "sources": [
+      [
+        "New Delhi",
+        []
+      ],
+      [
+        "New Delhi district",
+        []
+      ],
+      [
+        "New Delhi",
+        []
+      ],
+      [
+        "National Capital Region (India)",
+        []
+      ]
+    ],
+    "error": ""
+  },
+  {
+    "id": "H22",
+    "claim": "The Berlin Wall fell in 1999.",
+    "expected": "CONTRADICTED",
+    "got": "CONTRADICTED",
+    "ok": true,
+    "confidence": 100.0,
+    "candidates": 6,
+    "http_errors": 3,
+    "http_error_samples": [
+      "https://www.wikidata.org/w/api.php: HTTPError: 429 Client Error: Too Many Requests for url: https://www.wikidata.org/w/api.php?action=wbsearchentities&search=berlin+wall+fell+1999&language=en&uselang=en&form",
+      "https://en.wikipedia.org/w/api.php: HTTPError: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&format=json&list=search&srsearch=The+Berlin+Wall+fell+in+1999.&srli",
+      "https://en.wikipedia.org/w/api.php: HTTPError: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&format=json&list=search&srsearch=Berlin+Wall&srlimit=8&srprop=snipp"
+    ],
+    "rule": "CONSENSUS: contradiction_ratio>=0.60 and contradiction_weight>=0.45",
+    "sources": [
+      [
+        "The Berlin Wall",
+        []
+      ],
+      [
+        "Fall of the Berlin Wall",
+        [
+          "status=NEUTRAL"
+        ]
+      ],
+      [
+        "Berlin Wall",
+        []
+      ],
+      [
+        "Berlin Wall",
+        []
+      ]
+    ],
+    "error": ""
+  },
+  {
+    "id": "H23",
+    "claim": "The next bus on route 42 will arrive at 5:15 pm tomorrow.",
+    "expected": "INSUFFICIENT EVIDENCE",
+    "got": "INSUFFICIENT EVIDENCE",
+    "ok": true,
+    "confidence": 0.0,
+    "candidates": 1,
+    "http_errors": 1,
+    "http_error_samples": [
+      "https://en.wikipedia.org/w/api.php: HTTPError: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&format=json&list=search&srsearch=next+bus+route+will+arrive+tomorro"
+    ],
+    "rule": "NO_VOTING_EVIDENCE: 1 source(s) verified, none passed the vote gates",
+    "sources": [
+      [
+        "List of bus routes in Manhattan",
+        [
+          "status=NEUTRAL",
+          "method=NLI_FILTERED_OR_NEUTRAL",
+          "verification_confidence<75",
+          "evidence_quality<45.0"
+        ]
+      ]
+    ],
+    "error": ""
+  },
+  {
+    "id": "H24",
+    "claim": "Insulin is produced by the kidneys.",
+    "expected": "CONTRADICTED",
+    "got": "CONTRADICTED",
+    "ok": true,
+    "confidence": 100.0,
+    "candidates": 6,
+    "http_errors": 1,
+    "http_error_samples": [
+      "https://www.wikidata.org/w/api.php: HTTPError: 429 Client Error: Too Many Requests for url: https://www.wikidata.org/w/api.php?action=wbsearchentities&search=Insulin+is+produced+by+the+kidneys.&language=en&u"
+    ],
+    "rule": "CONSENSUS: contradiction_ratio>=0.60 and contradiction_weight>=0.45",
+    "sources": [
+      [
+        "Insulin",
+        []
+      ],
+      [
+        "insulin",
+        [
+          "status=NEUTRAL",
+          "method=NLI_FILTERED_OR_NEUTRAL",
+          "verification_confidence<75",
+          "evidence_quality<45.0"
+        ]
+      ],
+      [
+        "Insulin Therapy",
+        [
+          "status=NEUTRAL",
+          "method=NLI_FILTERED_OR_NEUTRAL",
+          "verification_confidence<75",
+          "evidence_quality<45.0"
+        ]
+      ],
+      [
+        "Insulin signal transduction pathway",
+        [
+          "status=NEUTRAL",
+          "method=NLI_FILTERED_OR_NEUTRAL",
+          "verification_confidence<75",
+          "evidence_quality<45.0"
+        ]
+      ]
+    ],
+    "error": ""
+  },
+  {
+    "id": "H25",
+    "claim": "Humans have 23 pairs of chromosomes.",
+    "expected": "SUPPORTED",
+    "got": "SUPPORTED",
+    "ok": true,
+    "confidence": 64.29,
+    "candidates": 5,
+    "http_errors": 3,
+    "http_error_samples": [
+      "https://en.wikipedia.org/w/api.php: HTTPError: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&format=json&list=search&srsearch=Humans+have+23+pairs+of+chromosome",
+      "https://en.wikipedia.org/w/api.php: HTTPError: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&format=json&list=search&srsearch=Humans&srlimit=8&srprop=snippet",
+      "https://en.wikipedia.org/w/api.php: HTTPError: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&format=json&list=search&srsearch=Humans+23+pairs+of+chromosomes&srl"
+    ],
+    "rule": "CONSENSUS: support_ratio>=0.60 and support_weight>=0.45",
+    "sources": [
+      [
+        "Chromosome 2",
+        []
+      ],
+      [
+        "Chromosome 21",
+        []
+      ],
+      [
+        "Chromosome 13",
+        []
+      ],
+      [
+        "group of humans",
+        [
+          "status=NEUTRAL",
+          "method=NLI_FILTERED_OR_NEUTRAL",
+          "verification_confidence<75",
+          "evidence_quality<45.0"
+        ]
+      ]
+    ],
+    "error": ""
+  },
+  {
+    "id": "H26",
+    "claim": "Mount Kilimanjaro is located in Tanzania.",
+    "expected": "SUPPORTED",
+    "got": "SUPPORTED",
+    "ok": true,
+    "confidence": 100.0,
+    "candidates": 12,
+    "http_errors": 3,
+    "http_error_samples": [
+      "https://en.wikipedia.org/w/api.php: HTTPError: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&format=json&prop=extracts%7Cinfo&explaintext=1&exchars=9000&inprop=",
+      "https://en.wikipedia.org/w/api.php: HTTPError: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&format=json&prop=extracts%7Cinfo&explaintext=1&exchars=9000&inprop=",
+      "https://en.wikipedia.org/w/api.php: HTTPError: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&format=json&list=search&srsearch=Mount+Kilimanjaro&srlimit=8&srprop"
+    ],
+    "rule": "CONSENSUS: support_ratio>=0.60 and support_weight>=0.45",
+    "sources": [
+      [
+        "Mount Kilimanjaro",
+        []
+      ],
+      [
+        "Mount Meru (Tanzania)",
+        []
+      ],
+      [
+        "Mount Kilimanjaro",
+        []
+      ],
+      [
+        "Kilimanjaro National Park",
+        []
+      ]
+    ],
+    "error": ""
+  },
+  {
+    "id": "H27",
+    "claim": "Mount Kilimanjaro is located in Peru.",
+    "expected": "CONTRADICTED",
+    "got": "CONTRADICTED",
+    "ok": true,
+    "confidence": 100.0,
+    "candidates": 9,
+    "http_errors": 4,
+    "http_error_samples": [
+      "https://www.wikidata.org/w/api.php: HTTPError: 429 Client Error: Too Many Requests for url: https://www.wikidata.org/w/api.php?action=wbsearchentities&search=Mount+Kilimanjaro+Peru&language=en&uselang=en&for",
+      "https://www.wikidata.org/w/api.php: HTTPError: 429 Client Error: Too Many Requests for url: https://www.wikidata.org/w/api.php?action=wbsearchentities&search=Peru&language=en&uselang=en&format=json&limit=3",
+      "https://en.wikipedia.org/w/api.php: HTTPError: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&format=json&list=search&srsearch=Mount+Kilimanjaro+is+located+in+Pe",
+      "https://en.wikipedia.org/w/api.php: HTTPError: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&format=json&list=search&srsearch=mount+kilimanjaro+located+peru&srl"
+    ],
+    "rule": "CONSENSUS: contradiction_ratio>=0.60 and contradiction_weight>=0.45",
+    "sources": [
+      [
+        "Mount Kilimanjaro",
+        []
+      ],
+      [
+        "Mount Kilimanjaro",
+        []
+      ],
+      [
+        "Mount Kilimanjaro climbing routes",
+        [
+          "status=NEUTRAL"
+        ]
+      ],
+      [
+        "Silvia Vasquez-Lavado",
+        [
+          "status=NEUTRAL",
+          "method=NLI_FILTERED_OR_NEUTRAL",
+          "verification_confidence<75",
+          "evidence_quality<45.0"
+        ]
+      ]
+    ],
+    "error": ""
+  },
+  {
+    "id": "H28",
+    "claim": "Venus is the largest planet in the Solar System.",
+    "expected": "CONTRADICTED",
+    "got": "CONTRADICTED",
+    "ok": true,
+    "confidence": 100.0,
+    "candidates": 10,
+    "http_errors": 5,
+    "http_error_samples": [
+      "https://www.wikidata.org/w/api.php: HTTPError: 429 Client Error: Too Many Requests for url: https://www.wikidata.org/w/api.php?action=wbsearchentities&search=Venus+is+the+largest+planet+in+the+Solar+System.&",
+      "https://www.wikidata.org/w/api.php: HTTPError: 429 Client Error: Too Many Requests for url: https://www.wikidata.org/w/api.php?action=wbsearchentities&search=Venus+the+largest+planet+in+the+Solar+System&lang",
+      "https://en.wikipedia.org/w/api.php: HTTPError: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&format=json&list=search&srsearch=largest+planet+in+the+solar+system",
+      "https://en.wikipedia.org/w/api.php: HTTPError: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&format=json&list=search&srsearch=Solar+System&srlimit=8&srprop=snip",
+      "https://en.wikipedia.org/w/api.php: HTTPError: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&format=json&list=search&srsearch=venus+largest+planet+solar+system&"
+    ],
+    "rule": "CONSENSUS: contradiction_ratio>=0.60 and contradiction_weight>=0.45",
+    "sources": [
+      [
+        "Outline of the Solar System",
+        [
+          "status=NEUTRAL"
+        ]
+      ],
+      [
+        "Solar System",
+        [
+          "status=NEUTRAL",
+          "method=NLI_FILTERED_OR_NEUTRAL",
+          "verification_confidence<75",
+          "evidence_quality<45.0"
+        ]
+      ],
+      [
+        "Venus",
+        []
+      ],
+      [
+        "Venus",
+        []
+      ]
+    ],
+    "error": ""
+  },
+  {
+    "id": "H29",
+    "claim": "The Berlin Wall fell in 1989.",
+    "expected": "SUPPORTED",
+    "got": "CONTRADICTED",
+    "ok": false,
+    "confidence": 69.92,
+    "candidates": 8,
+    "http_errors": 0,
+    "http_error_samples": [],
+    "rule": "CONSENSUS: contradiction_ratio>=0.60 and contradiction_weight>=0.45",
+    "sources": [
+      [
+        "Atomic Blonde (soundtrack)",
+        []
+      ],
+      [
+        "Fall of the Berlin Wall",
+        [
+          "status=NEUTRAL"
+        ]
+      ],
+      [
+        "Berlin Wall",
+        [
+          "status=NEUTRAL",
+          "verification_confidence<75"
+        ]
+      ],
+      [
+        "Berlin Wall",
+        [
+          "status=NEUTRAL",
+          "verification_confidence<75"
+        ]
+      ]
+    ],
+    "error": ""
+  },
+  {
+    "id": "H30",
+    "claim": "Neil Armstrong was the first person to walk on the Moon.",
+    "expected": "SUPPORTED",
+    "got": "SUPPORTED",
+    "ok": true,
+    "confidence": 100.0,
+    "candidates": 12,
+    "http_errors": 3,
+    "http_error_samples": [
+      "https://www.wikidata.org/w/api.php: HTTPError: 429 Client Error: Too Many Requests for url: https://www.wikidata.org/w/api.php?action=wbsearchentities&search=Neil+Armstrong+the+first+person+to+walk+on+the+Mo",
+      "https://en.wikipedia.org/w/api.php: HTTPError: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&format=json&list=search&srsearch=Neil+Armstrong+was+the+first+perso",
+      "https://en.wikipedia.org/w/api.php: HTTPError: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&format=json&list=search&srsearch=Neil+Armstrong&srlimit=8&srprop=sn"
+    ],
+    "rule": "CONSENSUS: support_ratio>=0.60 and support_weight>=0.45",
+    "sources": [
+      [
+        "RV Neil Armstrong",
+        []
+      ],
+      [
+        "Neil Armstrong",
+        []
+      ],
+      [
+        "Neil Armstrong (disambiguation)",
+        []
+      ],
+      [
+        "Apollo 11",
+        [
+          "status=NEUTRAL",
+          "method=NLI_FILTERED_OR_NEUTRAL",
+          "verification_confidence<75",
+          "evidence_quality<45.0"
+        ]
+      ]
+    ],
+    "error": ""
+  },
+  {
+    "id": "H31",
+    "claim": "My teacher will wear a green shirt next Monday.",
+    "expected": "INSUFFICIENT EVIDENCE",
+    "got": "INSUFFICIENT EVIDENCE",
+    "ok": true,
+    "confidence": 0.0,
+    "candidates": 6,
+    "http_errors": 3,
+    "http_error_samples": [
+      "https://en.wikipedia.org/w/api.php: HTTPError: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&format=json&prop=extracts%7Cinfo&explaintext=1&exchars=9000&inprop=",
+      "https://en.wikipedia.org/w/api.php: HTTPError: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&format=json&prop=extracts%7Cinfo&explaintext=1&exchars=9000&inprop=",
+      "https://en.wikipedia.org/w/api.php: HTTPError: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&format=json&prop=extracts%7Cinfo&explaintext=1&exchars=9000&inprop="
+    ],
+    "rule": "NO_VOTING_EVIDENCE: 6 source(s) verified, none passed the vote gates",
+    "sources": [
+      [
+        "Blue Monday (comics)",
+        [
+          "status=NEUTRAL",
+          "verification_confidence<75",
+          "evidence_quality<45.0"
+        ]
+      ],
+      [
+        "Monday",
+        [
+          "status=NEUTRAL",
+          "verification_confidence<75",
+          "evidence_quality<45.0",
+          "relevance<20"
+        ]
+      ],
+      [
+        "Monday",
+        [
+          "status=NEUTRAL",
+          "verification_confidence<75",
+          "evidence_quality<45.0",
+          "relevance<20"
+        ]
+      ],
+      [
+        "Monday",
+        [
+          "status=NEUTRAL",
+          "verification_confidence<75",
+          "evidence_quality<45.0",
+          "relevance<20"
+        ]
+      ]
+    ],
+    "error": ""
+  },
+  {
+    "id": "H32",
+    "claim": "Humans have 40 pairs of chromosomes.",
+    "expected": "CONTRADICTED",
+    "got": "CONTRADICTED",
+    "ok": true,
+    "confidence": 100.0,
+    "candidates": 5,
+    "http_errors": 3,
+    "http_error_samples": [
+      "https://en.wikipedia.org/w/api.php: HTTPError: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&format=json&prop=extracts%7Cinfo&explaintext=1&exchars=9000&inprop=",
+      "https://en.wikipedia.org/w/api.php: HTTPError: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&format=json&prop=extracts%7Cinfo&explaintext=1&exchars=9000&inprop=",
+      "https://en.wikipedia.org/w/api.php: HTTPError: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&format=json&list=search&srsearch=Humans&srlimit=8&srprop=snippet"
+    ],
+    "rule": "CONSENSUS: contradiction_ratio>=0.60 and contradiction_weight>=0.45",
+    "sources": [
+      [
+        "Chromosome 2",
+        []
+      ],
+      [
+        "Chromosome 21",
+        []
+      ],
+      [
+        "Chromosome 13",
+        []
+      ],
+      [
+        "group of humans",
+        [
+          "status=NEUTRAL",
+          "method=NLI_FILTERED_OR_NEUTRAL",
+          "verification_confidence<75",
+          "evidence_quality<45.0"
+        ]
+      ]
+    ],
+    "error": ""
+  },
+  {
+    "id": "H33",
+    "claim": "William Shakespeare wrote Hamlet.",
+    "expected": "SUPPORTED",
+    "got": "SUPPORTED",
+    "ok": true,
+    "confidence": 100.0,
+    "candidates": 12,
+    "http_errors": 1,
+    "http_error_samples": [
+      "https://en.wikipedia.org/w/api.php: HTTPError: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&format=json&list=search&srsearch=william+shakespeare+wrote+hamlet&s"
+    ],
+    "rule": "CONSENSUS: support_ratio>=0.60 and support_weight>=0.45",
+    "sources": [
+      [
+        "List of works by William Shakespeare",
+        [
+          "status=NEUTRAL"
+        ]
+      ],
+      [
+        "William Shakespeare",
+        [
+          "status=NEUTRAL"
+        ]
+      ],
+      [
+        "William Shakespeare",
+        [
+          "status=NEUTRAL"
+        ]
+      ],
+      [
+        "William Shakespeare",
+        [
+          "status=NEUTRAL",
+          "verification_confidence<75"
+        ]
+      ]
+    ],
+    "error": ""
+  },
+  {
+    "id": "H34",
+    "claim": "Mumbai is the capital of India.",
+    "expected": "CONTRADICTED",
+    "got": "SUPPORTED",
+    "ok": false,
+    "confidence": 100.0,
+    "candidates": 12,
+    "http_errors": 4,
+    "http_error_samples": [
+      "https://www.wikidata.org/w/api.php: HTTPError: 429 Client Error: Too Many Requests for url: https://www.wikidata.org/w/api.php?action=wbsearchentities&search=Mumbai+is+the+capital+of+India.&language=en&usela",
+      "https://www.wikidata.org/w/api.php: HTTPError: 429 Client Error: Too Many Requests for url: https://www.wikidata.org/w/api.php?action=wbsearchentities&search=Mumbai&language=en&uselang=en&format=json&limit=3",
+      "https://en.wikipedia.org/w/api.php: HTTPError: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&format=json&prop=extracts%7Cinfo&explaintext=1&exchars=9000&inprop=",
+      "https://en.wikipedia.org/w/api.php: HTTPError: 429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&format=json&prop=extracts%7Cinfo&explaintext=1&exchars=9000&inprop="
+    ],
+    "rule": "CONSENSUS: support_ratio>=0.60 and support_weight>=0.45",
+    "sources": [
+      [
+        "Mumbai",
+        []
+      ],
+      [
+        "Mumbai Metro",
+        []
+      ],
+      [
+        "2008 Mumbai attacks",
+        []
+      ],
+      [
+        "Gateway of India",
+        []
+      ]
+    ],
+    "error": ""
+  }
+]
